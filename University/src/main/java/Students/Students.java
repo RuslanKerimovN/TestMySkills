@@ -6,7 +6,6 @@ import ComparatorForStudents.ComparatorSurname;
 import ConnectionForDataBase.ConnectionForDataBase;
 import ListScore.ListScore;
 import Team.Team;
-
 import java.sql.*;
 import java.util.*;
 
@@ -58,7 +57,6 @@ public class Students {
                 '}';
     }
     private void printComponents(int id, String s1, String s2, int i, String s3) {
-//        System.out.println("Студент: id ->"  + id + " " + ", " + s1 + ", " + s2 + ", " + i + " лет " + ",группа - " + s3);
         System.out.printf("| %-15d | %-20s | %-20s | %-15d | %-20s |\n", id, s1, s2, i, s3);
     }
 
@@ -72,12 +70,12 @@ public class Students {
         boolean countStudent = false;
 
         if (result.isEmpty()) {
-            System.out.printf("%s| %-15s | %-20s | %-20s | %-15s | %-20s |%s\n","\u001B[33m", "id студента", "Фамилия", "Имя", "Возраст", "Группа","\u001B[0m");
+            System.out.printf("%s| %-15s | %-20s | %-20s | %-15s | %-20s |%s\n",
+                    "\u001B[33m", "id студента", "Фамилия", "Имя", "Возраст", "Группа","\u001B[0m");
             for (Students stud : studentsArrayList)
                 printComponents(stud.getId(),stud.getSurname(), stud.getName(), stud.getAge(), stud.getGroup());
             return;
         }
-
 
         switch (Integer.parseInt(result)) {
             case 1:
@@ -164,6 +162,7 @@ public class Students {
         connectionForDataBase.closeConnection();
         return list;
     }
+
     public void printStudentsByGroup() throws SQLException {
         Team group = new Team();
         Students students = new Students();
@@ -266,6 +265,7 @@ public class Students {
         System.out.println("Средняя арифметическая оценка - " + result + "\nНаименьшая оценка - " +
                 min + ", наивысшая - " + max + "\n");
     }
+
     private void bestSeries(ArrayList<Integer> list) {
         int count = 1, max = 0, bestScore = 0;
 

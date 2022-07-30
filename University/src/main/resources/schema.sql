@@ -1,7 +1,6 @@
-drop table if exists team, student, disciplines, score, list_score;
-drop schema university;
-
 create schema if not exists university;
+
+drop table if exists team, student, disciplines, score, list_score;
 
 create table team(
     id serial primary key,

@@ -4,7 +4,6 @@ import Disciplines.Disciplines;
 import ListScore.ListScore;
 import Students.Students;
 import Team.Team;
-
 import java.sql.SQLException;
 
 public class InterfaceProgram {

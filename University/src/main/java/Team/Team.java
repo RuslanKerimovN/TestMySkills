@@ -1,17 +1,15 @@
 package Team;
 
 import ConnectionForDataBase.ConnectionForDataBase;
-
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Team {
     private int id;
     private String name;
+
     public Team() {}
     public int getId() {
         return id;
@@ -26,6 +24,7 @@ public class Team {
     public void setName(String name) {
         this.name = name;
     }
+
     public void printGroupList() throws SQLException {
         ConnectionForDataBase connectionForDataBase = new ConnectionForDataBase();
         Statement statement = connectionForDataBase.getConnection().createStatement();
@@ -42,6 +41,7 @@ public class Team {
         statement.close();
         connectionForDataBase.closeConnection();
     }
+
     public ArrayList<Team> getGroupList() throws SQLException {
         ArrayList<Team> list = new ArrayList<>();
         ConnectionForDataBase connectionForDataBase = new ConnectionForDataBase();

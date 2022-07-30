@@ -1,13 +1,10 @@
 package Disciplines;
 
 import ConnectionForDataBase.ConnectionForDataBase;
-
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Disciplines {
     private int id;
@@ -38,8 +35,7 @@ public class Disciplines {
                 ", name='" + name + '\'' +
                 '}';
     }
-    private static final String ANSI_YELLOW = "\u001B[33m";
-    private static final String ANSI_RESET = "\u001B[0m";
+
     public void printDisciplineList() throws SQLException {
         ConnectionForDataBase connectionForDataBase = new ConnectionForDataBase();
         Statement statement = connectionForDataBase.getConnection().createStatement();

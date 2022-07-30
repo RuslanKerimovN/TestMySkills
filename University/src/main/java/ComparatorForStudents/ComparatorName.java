@@ -1,7 +1,6 @@
 package ComparatorForStudents;
 
 import Students.Students;
-
 import java.util.Comparator;
 
 public class ComparatorName implements Comparator<Students> {
