@@ -1,0 +1,11 @@
+Team/Team.class
+InterfaceProgram/InterfaceProgram.class
+ComparatorForStudents/ComparatorName.class
+ConnectionForDataBase/ConnectionForDataBase.class
+Score/Score.class
+ComparatorForStudents/ComparatorAge.class
+ListScore/ListScore.class
+org/example/Program.class
+Disciplines/Disciplines.class
+Students/Students.class
+ComparatorForStudents/ComparatorSurname.class
