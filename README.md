@@ -20,5 +20,7 @@
 Для запуска программы необходимо:
 
 Скачать и установить PostgreSQL
-После запуска PostgreSQL, для наглядной работы, рекомендуется запустить скрипты, которые находятся в University/src/main/resources `1` schema.sql и `2` date.sql
-После этого заходим в папку с проектом и запускаем команду `java -jar target/university-jar-with-dependencies.jar
+
+После запуска PostgreSQL, для наглядной работы, рекомендуется запустить скрипты, которые находятся в University/src/main/resources `1` `schema.sql` и `2` `date.sql`
+
+После этого заходим в папку с проектом и запускаем команду `java -jar target/university-jar-with-dependencies.jar`
